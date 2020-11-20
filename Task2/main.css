@@ -19,6 +19,15 @@ a:hover {
     text-transform: uppercase;
     text-decoration: none;
 }
+.an:hover {
+    background-image: url("lin.gif");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color: blue;
+    text-transform: none;
+    text-decoration: underline;
+}
+
 p[title]::first-letter{
    color: red;
    font-size: 40px;
