@@ -19,13 +19,26 @@ a:hover {
     text-transform: uppercase;
     text-decoration: none;
 }
-.an:hover {
-    background-image: url("lin.gif");
-    background-repeat: no-repeat;
+
+.an:hover{
     padding-left: 20px;
     color: blue;
     text-transform: none;
     text-decoration: underline;
+    opacity: 100;
+                -webkit-transition: background-image 2s ease-in-out;
+            transition: background-image 2s ease-in-out;
+}
+.an::before{
+    content: "\00a0\00a0\00a0\00a0";
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            opacity: 0;
+    
+}
+.an:hover::before {
+    opacity: 1;
+            transition: 2s;
 }
 
 p[title]::first-letter{
