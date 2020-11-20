@@ -1,0 +1,13 @@
+.txt {
+    color: blue;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    background-image: url("lin.gif");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.btn {
+    color: blue;
+    background-color: blanchedalmond;
+    border-style: inset;
+}
