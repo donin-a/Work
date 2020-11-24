@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,31 @@
     <style>
         .chess td {
             border: 1px solid black;
-            width: 20px;
-            height: 20px;
+            
             background-color: burlywood;
         }
-        .chess tr:nth-child(odd) td:nth-child(odd){
-            background-color: black;    
+
+        .chess tr:nth-child(odd) td:nth-child(odd) {
+            background-color: black;
         }
-        .chess tr:nth-child(even) td:nth-child(even){
-            background-color: black;    
+
+        .chess tr:nth-child(even) td:nth-child(even) {
+            background-color: black;
+        }
+
+        .chess td:hover {
+            background-image: url("queen.png");
+            background-size: 20px;
+
+        }
+
+        .chess {
+            width: 100%;
+            height: ;
         }
     </style>
 </head>
+
 <body>
     Text
     <table class="chess">
@@ -104,4 +118,5 @@
         </tr>
     </table>
 </body>
+
 </html>
