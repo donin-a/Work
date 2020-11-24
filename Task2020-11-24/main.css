@@ -1,4 +1,4 @@
-#table1 td:hover{
+#table1 tr:hover{
     background-color: brown;    
 }
 #table1 td{
