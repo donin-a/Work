@@ -47,3 +47,14 @@ p[title]::first-letter{
    font-weight: bold;
    font-family: 'Courier New', Courier, monospace; 
 }
+.an2:hover {
+    vertical-align: -200%;
+    color: blue;
+    text-transform: none;
+    text-decoration: underline;
+    background-image: url(stud2.gif);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    
+
+}
