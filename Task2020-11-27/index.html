@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size: 400px;
+        }
+        .myimg img {
+            height: calc(var(--img-size) / 4);
+            filter: grayscale(100%) blur(2px);
+            transition: 2s;
+
+        }
+        .myimg img:hover {
+            height: calc(var(--img-size) / 2);
+            border: 1px solid red;
+            filter: grayscale(0%) drop-shadow(16px 16px 20px red);
+        }
+        .myimg {
+            height: 100%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .myimgdiv {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    txt
+    <div class="myimgdiv">
+        <span class="myimg"><img src="01.jpg" alt=""></span>
+        <span class="myimg"><img src="02.jpg" alt=""></span>
+        <span class="myimg"><img src="03.jpg" alt=""></span>
+        <span class="myimg"><img src="04.jpg" alt=""></span>
+    </div>
+</body>
+
+</html>

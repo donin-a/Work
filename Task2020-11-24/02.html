@@ -6,59 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root {
+            --cell-size: 40px;
+        }
         .chess td {
             border: 1px solid black;
-            width: 50px;
-            height: 50px;
+            width: var(--cell-size);
+            height: var(--cell-size);
             background-color:white;
         }
 
-        .chess tr:nth-child(odd) td:nth-child(even) {
+        .chess tr:nth-child(odd) td:nth-child(even), .chess tr:nth-child(even) td:nth-child(odd) {
             background-color: black;
         }
-        .chess tr:nth-child(odd) td:nth-child(odd) {
+        .chess tr:nth-child(odd) td:nth-child(odd), .chess tr:nth-child(even) td:nth-child(even) {
             background-color: burlywood;
         }
 
-        .chess tr:nth-child(even) td:nth-child(odd) {
-            background-color: black;
-        }
-        .chess tr:nth-child(even) td:nth-child(even) {
-            background-color:  burlywood;
-        }
-
-        .chess td:hover {
+        .chess tr:not(first-childtd):not(:last-child) td:hover {
             background-image: url("queen.png");
-            background-size: 40px;
+            background-size: var(--cell-size);
             background-position: center;
             background-repeat: no-repeat;
 
         }
-        .chess tr:first-child td {
+        .chess tr:first-child td, .chess tr:last-child td {
             background-color: white !important;
             border-style: none;
-            height: 20px;
+            height: calc(var(--cell-size) / 2);
             background-image: unset;
         } 
-        .chess tr:last-child td {
+         
+        .chess td:first-child, .chess td:last-child {
             background-color: white !important;
             border-style: none;
-            height: 20px;
-            background-image: unset;
-        }
-        .chess td:first-child {
-            background-color: white !important;
-            border-style: none;
-            width: 20px;
+            width: calc(var(--cell-size) / 2);
             background-image: unset;
         } 
-        .chess td:last-child {
-            background-color: white !important;
-            border-style: none;
-            width: 20px;
-            background-image: unset;
-        }
-
+        
         .chess {
             height: 500px;
             width: 500px;;
@@ -68,10 +53,7 @@
             border-style: solid;
             border-spacing: unset;
         }
-        .chessbox {
-            
-            
-        }
+        
     </style>
 </head>
 
