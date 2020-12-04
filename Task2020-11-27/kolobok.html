@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        p {
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+        }
+
+        .view_port {
+            overflow: hidden;
+            height: 250px;
+            width: 100%;
+        }
+
+        .kol {
+            height: 200px;
+            width: 100%;
+            background-image: url("kol.png");
+            background-size: 100px;
+            background-position: left;
+            background-repeat: no-repeat;
+            animation: 3s slidein;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="view_port">
+        <div class="kol">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptates ducimus maxime quia magnam qui
+                voluptatum. Mollitia dolorem, enim repellat quod, reiciendis corrupti molestias, impedit beatae dolorum
+                quis dolore obcaecati.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
